@@ -1,0 +1,104 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\scss\.sass-cache\87f88134b2e274406d696eddf2817a21a5f37943\style.scssc" />
+    <None Include="wwwroot\assets\scss\.sass-cache\87f88134b2e274406d696eddf2817a21a5f37943\_variable.scssc" />
+    <None Include="wwwroot\assets\config-scss.bat" />
+    <None Include="wwwroot\assets\css\all.min.css" />
+    <None Include="wwwroot\assets\css\animate.css" />
+    <None Include="wwwroot\assets\css\bootstrap.min.css" />
+    <None Include="wwwroot\assets\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\assets\css\fontawsom-all.min.css" />
+    <None Include="wwwroot\assets\css\style.css" />
+    <None Include="wwwroot\assets\css\style.css.map" />
+    <None Include="wwwroot\assets\fonts\Montserrat-Bold.ttf" />
+    <None Include="wwwroot\assets\fonts\Montserrat-Regular.ttf" />
+    <None Include="wwwroot\assets\images\about_img.png" />
+    <None Include="wwwroot\assets\images\blog\blog_01.jpg" />
+    <None Include="wwwroot\assets\images\blog\blog_02.jpg" />
+    <None Include="wwwroot\assets\images\blog\blog_03.jpg" />
+    <None Include="wwwroot\assets\images\blog\blog_04.jpg" />
+    <None Include="wwwroot\assets\images\causes\c1.jpg" />
+    <None Include="wwwroot\assets\images\causes\c2.jpg" />
+    <None Include="wwwroot\assets\images\causes\c3.jpg" />
+    <None Include="wwwroot\assets\images\count.jpg" />
+    <None Include="wwwroot\assets\images\event\e1.jpg" />
+    <None Include="wwwroot\assets\images\event\e2.jpg" />
+    <None Include="wwwroot\assets\images\event\e3.jpg" />
+    <None Include="wwwroot\assets\images\gallery\g1.jpg" />
+    <None Include="wwwroot\assets\images\gallery\g2.jpg" />
+    <None Include="wwwroot\assets\images\gallery\g3.jpg" />
+    <None Include="wwwroot\assets\images\gallery\g4.jpg" />
+    <None Include="wwwroot\assets\images\logo.jpg" />
+    <None Include="wwwroot\assets\images\slider\slider-1.jpg" />
+    <None Include="wwwroot\assets\images\slider\slider-2.jpg" />
+    <None Include="wwwroot\assets\images\slider\slider-3.jpg" />
+    <None Include="wwwroot\assets\images\testimonial\member-01.jpg" />
+    <None Include="wwwroot\assets\images\testimonial\member-02.jpg" />
+    <None Include="wwwroot\assets\images\testimonial\member-03.jpg" />
+    <None Include="wwwroot\assets\js\bootstrap.min.js" />
+    <None Include="wwwroot\assets\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\assets\js\jquery-3.2.1.min.js" />
+    <None Include="wwwroot\assets\js\popper.js" />
+    <None Include="wwwroot\assets\js\popper.min.js" />
+    <None Include="wwwroot\assets\js\popper.min.js.map" />
+    <None Include="wwwroot\assets\js\script.js" />
+    <None Include="wwwroot\assets\plugins\grid-gallery\css\grid-gallery.css" />
+    <None Include="wwwroot\assets\plugins\grid-gallery\css\grid-gallery.min.css" />
+    <None Include="wwwroot\assets\plugins\grid-gallery\js\grid-gallery.js" />
+    <None Include="wwwroot\assets\plugins\grid-gallery\js\grid-gallery.min.js" />
+    <None Include="wwwroot\assets\plugins\owl\owl.carousel.min.css" />
+    <None Include="wwwroot\assets\plugins\owl\owl.carousel.min.js" />
+    <None Include="wwwroot\assets\plugins\owl\owl.theme.css" />
+    <None Include="wwwroot\assets\plugins\scroll-fixed\jquery-scrolltofixed-min.js" />
+    <None Include="wwwroot\assets\plugins\slider\css\owl.carousel.min.css" />
+    <None Include="wwwroot\assets\plugins\slider\css\owl.theme.default.css" />
+    <None Include="wwwroot\assets\plugins\slider\js\owl.carousel.min.js" />
+    <None Include="wwwroot\assets\plugins\slider\js\slider.js" />
+    <None Include="wwwroot\assets\plugins\testimonial\css\owl.carousel.min.css" />
+    <None Include="wwwroot\assets\plugins\testimonial\css\owl.theme.min.css" />
+    <None Include="wwwroot\assets\plugins\testimonial\js\owl.carousel.min.js" />
+    <None Include="wwwroot\assets\scss\base\basic_setup.scss" />
+    <None Include="wwwroot\assets\scss\base\Untitled-6" />
+    <None Include="wwwroot\assets\scss\response\responsive.scss" />
+    <None Include="wwwroot\assets\scss\style.css.map" />
+    <None Include="wwwroot\assets\scss\style.scss" />
+    <None Include="wwwroot\assets\scss\_variable.scss" />
+    <None Include="wwwroot\assets\webfonts\fa-brands-400.eot" />
+    <None Include="wwwroot\assets\webfonts\fa-brands-400.svg" />
+    <None Include="wwwroot\assets\webfonts\fa-brands-400.ttf" />
+    <None Include="wwwroot\assets\webfonts\fa-brands-400.woff" />
+    <None Include="wwwroot\assets\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\assets\webfonts\fa-regular-400.eot" />
+    <None Include="wwwroot\assets\webfonts\fa-regular-400.svg" />
+    <None Include="wwwroot\assets\webfonts\fa-regular-400.ttf" />
+    <None Include="wwwroot\assets\webfonts\fa-regular-400.woff" />
+    <None Include="wwwroot\assets\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\assets\webfonts\fa-solid-900.eot" />
+    <None Include="wwwroot\assets\webfonts\fa-solid-900.svg" />
+    <None Include="wwwroot\assets\webfonts\fa-solid-900.ttf" />
+    <None Include="wwwroot\assets\webfonts\fa-solid-900.woff" />
+    <None Include="wwwroot\assets\webfonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\assets\webfonts\Simple-Line-Icons.eot" />
+    <None Include="wwwroot\assets\webfonts\Simple-Line-Icons.svg" />
+    <None Include="wwwroot\assets\webfonts\Simple-Line-Icons.ttf" />
+    <None Include="wwwroot\assets\webfonts\Simple-Line-Icons.woff" />
+    <None Include="wwwroot\assets\webfonts\Simple-Line-Icons.woff2" />
+    <None Include="wwwroot\assets\webfonts\Simple-Line-Iconsb26c.eot" />
+    <None Include="wwwroot\assets\webfonts\Simple-Line-Iconsb26c.svg" />
+    <None Include="wwwroot\assets\webfonts\Simple-Line-Iconsb26c.ttf" />
+    <None Include="wwwroot\assets\webfonts\Simple-Line-Iconsb26c.woff" />
+    <None Include="wwwroot\assets\webfonts\Simple-Line-Iconsb26c.woff2" />
+    <None Include="wwwroot\assets\webfonts\themify.eot" />
+    <None Include="wwwroot\assets\webfonts\themify.svg" />
+    <None Include="wwwroot\assets\webfonts\themify.ttf" />
+    <None Include="wwwroot\assets\webfonts\themify.woff" />
+  </ItemGroup>
+
+</Project>
