@@ -1,0 +1,73 @@
+﻿<div class="container-fluid header-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 logo-dv">
+                <img src="assets/images/logo.jpg" alt="">
+            </div>
+            <AuthorizeView>
+                <Authorized>
+                    <div class="col-md-9 bonto">
+                        <ul>
+                            <li>
+                                <div class="donta-btn">
+                                    <p>Xin chào, </p>
+                                    <strong>@identityName!</strong>
+                                </div>
+                            </li>
+
+                            <li>
+                                <NavLink href="/dang-xuat">
+                                    <div class="voltterr-btn">
+                                        <p>Đăng xuất</p>
+                                        <strong>thành viên</strong>
+                                    </div>
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                </Authorized>
+                <NotAuthorized>
+                    <div class="col-md-9 bonto">
+                        <ul>
+                            <li>
+                                <NavLink href="/dang-nhap">
+                                    <div class="donta-btn">
+                                        <p>Tham gia</p>
+                                        <strong>cộng đồng</strong>
+                                    </div>
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink href="/dang-ky">
+                                    <div class="voltterr-btn">
+                                        <p>Trở thành</p>
+                                        <strong>thành viên</strong>
+                                    </div>
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                </NotAuthorized>
+            </AuthorizeView>
+
+        </div>
+    </div>
+</div>
+
+@code {
+    private string identityName;
+
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationStateTask { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authenticationStateTask;
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            identityName = user.Identity.Name;
+        }
+    }
+}
