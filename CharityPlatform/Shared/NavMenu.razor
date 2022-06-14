@@ -1,26 +1,28 @@
 ﻿<div id="menu-jk" class="headwe-nav container-fluid">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-9 nav-div">
-                <nav class="navbar navbar-expand-lg navbar-light     ">
+        <div class="d-flex">
+            <div class="col-md-3 col-8 logo-dv" onclick="window.location.href='#'">
+                <img src="assets/images/logo.jpg" alt="">
+            </div>
+            <div class="col-md-6 col-4 nav-div">
+                <nav class="navbar navbar-expand-lg navbar-light">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home </a>
+                                <a class="nav-link" href="#">Trang chủ</a>
+                            </li>
+                           @* <li class="nav-item">
+                                <a class="nav-link" href="about_us.html">Giới thiệu hệ thống</a>
+                            </li>*@
+                            <li class="nav-item">
+                                <a class="nav-link " href="events.html">Các sự kiện</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about_us.html">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="events.html">Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="contact_us.html">Contact US</a>
+                                <a class="nav-link " href="contact_us.html">Liên hệ với chúng tôi</a>
                             </li>
                         </ul>
 
@@ -28,24 +30,68 @@
                 </nav>
             </div>
             <div class="col-lg-3 d-none d-lg-block social-div">
-                <ul class="ulright">
-                    <li>
-                        <i class="fab fa-facebook-square"></i>
-                    </li>
-                    <li>
-                        <i class="fab fa-twitter-square"></i>
-                    </li>
-                    <li>
-                        <i class="fab fa-instagram"></i>
-                    </li>
-                    <li>
-                        <i class="fab fa-linkedin"></i>
-                    </li>
-                    <li>
-                        <i class="fab fa-pinterest-square"></i>
-                    </li>
-                </ul>
+                <AuthorizeView>
+                <Authorized>
+                    <div class="bonto">
+                        <ul>
+                            <li>
+                                <div class="donta-btn">
+                                    <p>Xin chào, </p>
+                                    <strong>@identityName!</strong>
+                                </div>
+                            </li>
+
+                            <li>
+                                <NavLink href="/dang-xuat">
+                                    <div class="voltterr-btn">
+                                        <p>Đăng xuất</p>
+                                        <strong>thành viên</strong>
+                                    </div>
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                </Authorized>
+                <NotAuthorized>
+                    <div class="bonto">
+                        <ul class="d-flex">
+                            <li>
+                                <NavLink href="/dang-ky">
+                                    <div class="voltterr-btn">
+                                       <strong>Đăng ký</strong>
+                                    </div>
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink href="/dang-nhap">
+                                    <div class="donta-btn">
+                                        <strong>Đăng nhập</strong>
+                                     </div>
+                                </NavLink>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </NotAuthorized>
+            </AuthorizeView>
             </div>
         </div>
     </div>
 </div>
+@code {
+    private string identityName;
+
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationStateTask { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authenticationStateTask;
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            identityName = user.Identity.Name;
+        }
+    }
+}

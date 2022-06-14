@@ -245,18 +245,23 @@ header .header-top {
       header .header-top .bonto ul li p {
         font-size: .7rem;
         font-weight: 600; }
-    header .header-top .bonto ul .donta-btn {
-      background-color: #ff5722;
-      color: #FFF;
-      padding: 5px 15px;
-      border-radius: 5px; }
-    header .header-top .bonto ul .voltterr-btn {
-      background-color: #f78d15;
-      color: #FFF;
-      padding: 5px 15px;
-      border-radius: 5px; }
+.headwe-nav .bonto ul .donta-btn {
+    background-color: #ff5722;
+    color: #FFF;
+    padding: 5px 15px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+.headwe-nav .bonto ul .voltterr-btn {
+    background-color: #f78d15;
+    color: #FFF;
+    padding: 5px 15px;
+    font-size: 13px;
+    border-radius: 5px;
+}
 header .headwe-nav {
-  background-color: #fafafa; }
+    background-color: #ffffff;
+}
   header .headwe-nav .nav-div .navbar {
     padding: 0px; }
   header .headwe-nav .nav-div .navbar-nav {
